@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#">Satyam Shivam</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/cropped_profile.jpg" alt="Satyam Shivam" class="profile-image">
+            <h1>Satyam Shivam</h1>
+            <h3>MCA'26 at VIT Bhopal</h3>
+            <p>Former Programmer Analyst Trainee at CED Patna. AWS Cloud Foundation & Google IT Support Certified</p>
+            <div class="cta-buttons">
+                <a href="iamsatyamshivam@gmail.com" class="cta-primary" target="_blank">E-mail</a>
+                <a href="https://drive.google.com/file/d/1ReA_FzS20IV8n9PIXTali07cuEG6zMgB/view?usp=drivesdk" class="cta-primary" target="_blank">Resume</a>
+            </div>
+            <div class="social-links">
+                <a href="https://instagram.com/isatyamshivam" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/isatyamshivam" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/isatyamshivam" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/@isatyamshivam" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://x.com/isatyamshivam" target="_blank"><i class="fab fa-x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a dedicated software developer with a passion for creating efficient and innovative solutions. My expertise spans across various technologies and frameworks, enabling me to tackle diverse challenges in software development.</p>
+                <p>With a strong foundation in computer science and hands-on experience in real-world projects, I strive to deliver high-quality code and exceptional user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming Languages</h3>
+                <p>Java, Python, JavaScript, SQL</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Libraries / frameworks</h3>
+                <p>Tailwind, React.js, Next.js, Node.js, Numpy, Pandas</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Tools</h3>
+                <p>AWS, Git, GitHub, Jupyter Notebook, Google Colab, VS Code</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Soft Skills</h3>
+                <p>Decision making, Collaborative, Time management</p>
+            </div>
+        </div>
+    </section>    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-title">
+                        <img src="images/newssy_logo.svg" alt="Newssy Project" class="project-icon">
+                        <h3>Newssy – Real-Time News Aggregator</h3>
+                    </div>
+                    <ul class="project-description">
+                        <li>Tech Stack: Next.js, JavaScript, Tailwind CSS, News.api</li>
+                        <li>Fetching real-time news from News APIs, covering 8+ categories globally.</li>
+                        <li>Built with React.js, optimized and responsive UI, achieving 90+ Lighthouse performance score.</li>
+                        <li>Implemented scroll and search filters, improving user content discovery by 40%.</li>
+                        <li>Deployed with CI/CD pipeline for seamless updates and 99.9% uptime on live environment.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/isatyamshivam/newssy" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <div class="project-title">
+                        <img src="images/MoodTunes_logo.svg" alt="MoodTunes Project" class="project-icon">
+                        <h3>MoodTunes – AI-Powered Music Recommender</h3>
+                    </div>
+                    <ul class="project-description">
+                        <li>Tech Stack: React.js, JavaScript, Tailwind CSS, Framer Motion, face-api.js</li>
+                        <li>Built MoodTunes, an AI music app detecting mood via selfie with 90%+ accuracy.</li>
+                        <li>Suggested Spotify tracks across 6 emotions using real-time analysis.</li>
+                        <li>Supported 2 input modes (selfie/manual), boosting user engagement 2x.</li>
+                        <li>Achieved less than 1 sec mood detection using optimized image processing with face API.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/isatyamshivam/moodtunes" target="_blank" class="github-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Satyam. All rights reserved.</p>
+    </footer>
+</body>
+</html>
