@@ -14,10 +14,10 @@
             <div class="logo">
                 <a href="#">Satyam Shivam's Portfolio</a>
             </div>
-            <button class="menu-toggle" aria-label="Toggle menu">
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <ul class="nav-links">
+            <ul class="nav-links" id="primary-navigation">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -165,11 +165,38 @@
         </div>
     </section>
 
-     </section>
-
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Satyam. All rights reserved.</p>
     </footer>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuToggle && navLinks) {
+                const closeMenu = () => {
+                    navLinks.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                };
+
+                menuToggle.addEventListener('click', (event) => {
+                    event.stopPropagation();
+                    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                    const nextState = !expanded;
+                    menuToggle.setAttribute('aria-expanded', nextState.toString());
+                    navLinks.classList.toggle('active', nextState);
+                });
+
+                navLinks.querySelectorAll('a').forEach((link) => {
+                    link.addEventListener('click', closeMenu);
+                });
+
+                document.addEventListener('click', (event) => {
+                    if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+                        closeMenu();
+                    }
+                });
+            }
+        </script>
 </body>
 </html>
